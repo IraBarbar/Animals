@@ -1,0 +1,1 @@
+#Horse:3,Camel:2,Donkey:1

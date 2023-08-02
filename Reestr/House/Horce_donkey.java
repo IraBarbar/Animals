@@ -2,16 +2,16 @@ package Reestr.House;
 
 public class Horce_donkey implements House {
 
-    private static final int houseID = 4;
+    private  final int houseID = 4;
     
-    public static int getHouseid() {
+    public  int getHouseid() {
         return houseID;
     }
 
     @Override
     public void nameHouse() {
         
-        throw new UnsupportedOperationException("Лошадь-осель.");
+        System.out.println("Лошадь-осел.");
     }
 
     @Override

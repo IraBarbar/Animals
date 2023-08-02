@@ -8,8 +8,8 @@ public class Camel extends Pack{
         return classID;
     }
 
-    public Camel(String name, char gender, int year_birth, int month_birth, int day_birth, int houseID) {
-        super(name, gender, year_birth, month_birth, day_birth, houseID);
+    public Camel(String name, char gender, int year_birth, int month_birth, int day_birth) {
+        super(name, gender, year_birth, month_birth, day_birth);
         
     }
 
@@ -23,6 +23,12 @@ public class Camel extends Pack{
     public void printinfo() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'printinfo'");
+    }
+
+    @Override
+    public int compareTo(Animal o) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
     }
     
 }

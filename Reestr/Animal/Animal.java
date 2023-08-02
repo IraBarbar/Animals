@@ -4,7 +4,7 @@ package Reestr.Animal;
 import java.time.LocalDate;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public abstract class Animal implements Team, Printinfo {
+public abstract class Animal  implements Team, Printinfo , Comparable<Animal> {
 
     private static final AtomicInteger COUNTER = new AtomicInteger(1);
     private final int animalID;
@@ -18,7 +18,7 @@ public abstract class Animal implements Team, Printinfo {
     
     private LocalDate birthday; 
     private LocalDate createdAt;
-    private int houseID;
+    
     private char is_active;
     private LocalDate leaveAt;
 
@@ -77,16 +77,6 @@ public abstract class Animal implements Team, Printinfo {
 
 
 
-    public int getHouseID() {
-        return houseID;
-    }
-
-
-
-    public void setHouseID(int houseID) {
-        this.houseID = houseID;
-    }
-
 
 
     public char getIs_active() {
@@ -113,7 +103,7 @@ public abstract class Animal implements Team, Printinfo {
 
 
 
-    public Animal( String name, char gender, int year_birth, int month_birth, int day_birth, int houseID) {
+    public Animal( String name, char gender, int year_birth, int month_birth, int day_birth) {
         animalID = COUNTER.getAndIncrement();
     
         this.name = name;
@@ -124,7 +114,7 @@ public abstract class Animal implements Team, Printinfo {
 
         LocalDate date = LocalDate.now();
         this.createdAt = date;
-        this.houseID = houseID;
+        
         this.is_active = 1;
     }
 

@@ -2,15 +2,15 @@ package Reestr.House;
 
 public class Yaung implements House {
 
-    private static final int houseID = 3;
+    private  final int houseID = 3;
     
-    public static int getHouseid() {
+    public  int getHouseid() {
         return houseID;
     }
     @Override
     public void nameHouse() {
        
-        throw new UnsupportedOperationException("Молодые животные.");
+        System.out.println("Молодые животные.");
     }
 
     @Override

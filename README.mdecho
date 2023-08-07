@@ -1,0 +1,22 @@
+# Animals echo # Animals >> README.md
+  132  git init
+  133  git add README.md
+  134  git commit -m first commit
+  135  git branch -M main
+  136  git remote add origin git@github.com:IraBarbar/Animals.git
+  137  git push -u origin main
+  138  echo #Dog:1,Cat:2 >> Home.txt
+  139  echo #Horse:3,Camel:2,Donkey:1 >> Pack.txt
+  140  git add .
+  141  git commit -m Added Home
+# Animals echo # Animals >> README.md
+  132  git init
+  133  git add README.md
+  134  git commit -m first commit
+  135  git branch -M main
+  136  git remote add origin git@github.com:IraBarbar/Animals.git
+  137  git push -u origin main
+  138  echo #Dog:1,Cat:2 >> Home.txt
+  139  echo #Horse:3,Camel:2,Donkey:1 >> Pack.txt
+  140  git add .
+  141  git commit -m Added Home

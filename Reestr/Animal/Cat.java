@@ -1,5 +1,9 @@
 package Reestr.Animal;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Cat extends Home {
 
     public Cat(int animalID, int class_typeID, int classID, String name, char gender, int year_birth, int month_birth,
@@ -14,20 +18,27 @@ public class Cat extends Home {
         super(animalID, name, gender, year_birth, month_birth, day_birth);
         setClassID(2);
         setClass_typeID(1);
-        
+
     }
 
     private final int classID = 2;
 
-
-    public  int getClassid() {
+    public int getClassid() {
         return classID;
     }
 
+    List<String> teams = new ArrayList<>(Arrays.asList("Мурлыкать."));
+
     @Override
     public void team() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Мурлыкать!");
+        for (String string : teams) {
+            System.out.println(" "+string);
+        }
+    }
+
+    @Override
+    public void addNewTeam(String team) {
+        teams.add(team);
     }
 
     @Override
@@ -41,7 +52,5 @@ public class Cat extends Home {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
     }
-
-   
 
 }

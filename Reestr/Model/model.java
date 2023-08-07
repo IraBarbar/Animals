@@ -92,5 +92,9 @@ public class Model implements Iterable<Animal> {
     public void findNameAnimal(String name){
         reestr.findAnimalName(reestr, name);
     }
+
+    public void addNewTeam(int animalID ,String team){
+        reestr.addTeam(reestr, animalID, team);
+    }
     
 }

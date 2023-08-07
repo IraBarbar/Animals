@@ -17,9 +17,10 @@ public class Menu implements ViewMenu {
         options = new Command[] {
                 new AddNewAnimal(presenter),
                 new ShowAllAnimals(presenter),
-                new ShowTeamAnimal(presenter),
-                new SaveReestr(presenter),
                 new FindNameAnimal(presenter),
+                new ShowTeamAnimal(presenter),
+                new AddNewTeamAnimal(presenter),
+                new SaveReestr(presenter),
                 new ExitCommand()
                
 

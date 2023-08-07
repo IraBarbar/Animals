@@ -5,5 +5,7 @@ package Reestr.Animal;
  */
 public interface Team {
 
-  void team ();  
+  void team ();
+    
+  void addNewTeam(String string);
 } 

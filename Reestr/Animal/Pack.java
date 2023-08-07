@@ -1,7 +1,10 @@
 package Reestr.Animal;
 
+
+
 public abstract class Pack extends Animal {
     private final static int class_typeID = 2;
+    
 
     public Pack(int animalID, String name, char gender, int year_birth, int month_birth, int day_birth) {
         super(animalID, name, gender, year_birth, month_birth, day_birth);

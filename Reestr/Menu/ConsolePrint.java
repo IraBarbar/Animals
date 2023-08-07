@@ -290,7 +290,7 @@ public class ConsolePrint implements ViewConsole {
     public int choiceAnimalID() {
         boolean is_ok = false;
         while (!is_ok) {
-            System.out.println("Введите индекс животного:");
+            System.out.println("Введите animalID животного:");
             String input = iScanner.next();
             try {
                 if (isDigit(input)) {

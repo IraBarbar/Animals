@@ -314,4 +314,10 @@ public class ConsolePrint implements ViewConsole {
         return iScanner.next();
     }
 
+    @Override
+    public String addNewTeam() {
+        System.out.println("Введите новую команду (Желательно латиницей): ");
+        return iScanner.next();
+    }
+
 }

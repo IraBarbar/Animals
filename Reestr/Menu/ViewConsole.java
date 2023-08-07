@@ -11,5 +11,6 @@ public interface ViewConsole {
     int inputDay_birth();
     int choiceHouseID();
     int choiceAnimalID();
-    String findNameAnimal();      
+    String findNameAnimal();  
+    String addNewTeam();    
 }

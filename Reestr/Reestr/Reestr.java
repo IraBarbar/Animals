@@ -90,8 +90,10 @@ public class Reestr implements Iterable<Animal> {
         for (Animal animal : animals) {
             if (animal.getAnimalID() == animalID) {
                 System.out.printf(animal.getClass().getSimpleName());
-                System.out.printf(": ");
+                System.out.printf(": \n ");
+                System.out.println("---------------------");
                 animal.team();
+                System.out.println();
                 is_ok = true;
             }
 
@@ -114,6 +116,21 @@ public class Reestr implements Iterable<Animal> {
         }
         if (!is_ok)
             System.out.println("Такого животного нет.");
+
+    }
+
+        public void addTeam(Reestr animals, int animalID, String newTeam) {
+        boolean is_ok = false;
+        for (Animal animal : animals) {
+            if (animal.getAnimalID() == animalID) {
+                animal.addNewTeam(newTeam);
+                is_ok = true;
+            }
+        
+
+        }
+        if (!is_ok)
+            System.out.println("Такого animalID нет.");
 
     }
 

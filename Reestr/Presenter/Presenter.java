@@ -76,6 +76,10 @@ public class Presenter {
     public void findNameAnimal(){
         model.findNameAnimal(view.findNameAnimal());
     }
+    public void AddNewTeamAnimal(){
+        
+        model.addNewTeam(view.choiceAnimalID(), view.addNewTeam());
+    }
     
 
 }

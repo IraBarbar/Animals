@@ -20,3 +20,36 @@
   139  echo #Horse:3,Camel:2,Donkey:1 >> Pack.txt
   140  git add .
   141  git commit -m Added Home
+142  git push -u origin main
+  143  nano Home
+  144  cat Home.txt Pack.txt > FriandsMan.txt
+  145  cat FriandsMan.txt
+  146  rm Home.txt
+  147  rm Pack.txt
+  148  git add .
+  149  git commit -m FriandsMan
+  150  git push -u origin main
+  151  app install dpkg
+  152  apt-get install dpkg
+  153  rm dpkg
+  154  apt remove dpkg
+  155  apt purge  dpkg
+  156  apt show dpkg -y
+  157  apt show dpkg 
+  158  apt-get install dpkg
+  159  cd ~
+  160  dpkg -L
+  161  dpkg -i zip_3.0-4_i386.deb
+  162  dpkg -i zip
+  163  dpkg -i foo_VVV-RRR.deb
+  164  dpkg -L ufw
+  165  dpkg -S /etc/host.conf 
+  166  dpkg -l nginx
+  167  dpkg -r nginx
+  168  dpkg -l nginx
+  169  apt install -y nginx
+  170  dpkg -l nginx
+  171  dpkg -r nginx
+  172  dpkg -l nginx
+  173  history
+ 
